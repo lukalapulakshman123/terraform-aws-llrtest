@@ -31,7 +31,8 @@ resource "aws_iam_role" "role" {
             "codepipeline:ListTagsForResource",
             "ds:ListTagsForResource",
             "ec2:DescribeAccountAttributes",
-            "ec2:GetEbsEncryptionByDefault"
+            "ec2:GetEbsEncryptionByDefault",
+            "eks:DescribeAddon"
           ]
           Effect   = "Allow"
           Resource = "*"
