@@ -32,7 +32,8 @@ resource "aws_iam_role" "role" {
             "ds:ListTagsForResource",
             "ec2:DescribeAccountAttributes",
             "ec2:GetEbsEncryptionByDefault",
-            "eks:DescribeAddon"
+            "eks:DescribeAddon",
+	    "eks:DescribeCluster"
           ]
           Effect   = "Allow"
           Resource = "*"
